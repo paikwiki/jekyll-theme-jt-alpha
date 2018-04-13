@@ -1,0 +1,7 @@
+items:
+- title : Artwork
+  url: /
+- title : Text
+  url: /text
+- title : About
+  url: /about
