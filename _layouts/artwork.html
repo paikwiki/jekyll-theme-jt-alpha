@@ -6,7 +6,7 @@ layout: default
   <header>
     <h1>{{page.title}}</h1>
   </header>
-  <section class="post-content artwork-content">
+  <section class="post-content artwork-content {% if page.class %}{{ page.class }}{% endif %}">
     {% if page.image %}
       <section class="post-image artwork-image">
         <img src="{{ page.image | prepend:site.baseurl }}" alt="{{ page.title }}">
