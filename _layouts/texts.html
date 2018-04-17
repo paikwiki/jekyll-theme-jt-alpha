@@ -8,7 +8,7 @@ layout: default
   </header>
   <section class="posts-content texts-content">
     {% assign sorted_posts = site.posts 
-      | where:"categories","text"%}
+      | where:"categories", page.item %}
     {% if sorted_posts.size > 0 %}
       <ul class="posts-list texts-list">
         {% for post in sorted_posts %}
