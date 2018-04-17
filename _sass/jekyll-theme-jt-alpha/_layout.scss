@@ -169,8 +169,14 @@
   .site-footer {
     padding: 0.2em;
     bottom: 0;
-    p {
+    .copyright {
       text-align: center;
+      color: $metaFontColor;
+      font-size: 0.8rem;
+      a {
+        text-decoration: underline;
+        color: $metaFontColor;        
+      }
     }
   }
 }
