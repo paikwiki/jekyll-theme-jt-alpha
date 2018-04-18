@@ -126,18 +126,14 @@
             text-align: center;
           }
         }
-      }
-      @media all and (max-width: 960px){
-        .text-content {
-          columns: 2;
+        @media all and (max-width: 960px){
+          .artwork-image {
+            img {
+              max-width: 90%;
+            }
+          }
         }
-      }
-      @media all and (max-width: 640px){
-        .text-content {
-          columns: unset;
-          padding: 0 2rem;
-        }
-        .artwork-content {
+        @media all and (max-width: 640px){
           .artwork-image {
             img {
               max-width: 100%;
