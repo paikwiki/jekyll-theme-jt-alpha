@@ -109,9 +109,6 @@
     .post-wrapper {
       header {
         height: 2rem;
-        h1 {
-          display: none;
-        }
       }
       .artwork-content {
         margin-bottom: 4rem;
@@ -150,16 +147,25 @@
         }
       }
     }
-    .page-content {
-      ul {
-        list-style: none;
-        padding-left: 0;
-        li {
-          line-height: 1.6rem;
+    .artwork-wrapper {
+      header {
+        h1 {
+          display: none;
         }
       }
-      .about-info {
-        margin-bottom: 2rem;
+    }
+    .page-wrapper {
+      .page-content {
+        ul {
+          list-style: none;
+          padding-left: 0;
+          li {
+            line-height: 1.6rem;
+          }
+        }
+        .about-info {
+          margin-bottom: 2rem;
+        }
       }
     }
   }
@@ -172,7 +178,7 @@
       font-size: 0.8rem;
       a {
         text-decoration: underline;
-        color: $metaFontColor;        
+        color: $metaFontColor;
       }
     }
   }
