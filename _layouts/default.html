@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="{{ "/assets/custom.css" | relative_url }}">
 </head>
 <body>
-  <article class="global-wrapper">
+  <div class="global-wrapper">
     <header class="site-header">
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       {% if site.description %}
@@ -21,7 +21,7 @@
       {{ content }}
     </section>
     {% include footer.html %}    
-  </article>
+  </div>
   <script type="text/javascript" src="{{ "/assets/custom.js" | relative_url }}"></script>
 </body>
 </html>
