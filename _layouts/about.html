@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<article class="about-wrapper">
+<div class="about-wrapper">
   <section class="about-info">
     {% if site.data.author.description %}
       <p>{{ site.data.author.description }}</p>
@@ -13,9 +13,9 @@ layout: page
   </section>
   {% if site.data.author.exhibitions %}
     <section class="about-exhibitions">
-      <h1>Exhibitions</h1>
+      <h2>Exhibitions</h2>
       {% for exgroup in site.data.author.exhibitions %}
-        <h2>{{ exgroup.title }}</h2>
+        <h3>{{ exgroup.title }}</h3>
         <ul>
           {% for exitem in exgroup.list %}
             <li>{{ exitem }}</li>
@@ -24,4 +24,4 @@ layout: page
       {% endfor %}
     </section>
   {% endif %}
-</article>
+  </div>
