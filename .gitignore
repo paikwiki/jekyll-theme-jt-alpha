@@ -5,4 +5,5 @@
 _site
 Gemfile.lock
 docs/_layouts
+docs/_includes
 docs/assets/style.scss
