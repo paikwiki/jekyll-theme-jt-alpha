@@ -1,9 +1,23 @@
 <section class="navigation">
   <nav>
-    <ul>
+    {% if site.data.navigation.items.size > 0 %}
+    <ul class="main">
       {% for item in site.data.navigation.items %}
-        <li><a href="{{ item.url | prepend:site.baseurl }}">{{ item.title }}</a></li>
+      <li><a href="{{ item.url | prepend:site.baseurl }}">{{ item.title }}</a>
+        {% if item.subitems.size > 0 %}
+        <ul class="sub">
+          {% for sitem in item.subitems %}
+          <li><a href="{{ sitem.url | prepend:site.baseurl }}">{{ sitem.title }}</a></li>
+          {% endfor %}
+        </ul>
+        {% endif %}
+      </li>
       {% endfor %}
     </ul>
+    {% else %}
+    <ul>
+      <li>NOTICE: There're no items. You can add them on <code>_data/navigation</code>.</li>
+    </ul>
+    {% endif %}
   </nav>
 </section>

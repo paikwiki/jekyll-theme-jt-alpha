@@ -21,16 +21,36 @@
       content: '— ';
     }
     .navigation {
-      ul {
+      .main {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
         margin: 1rem 0 0 0;
         padding-left: 0;
-        li {
+        height: 3rem;
+        > li {
           padding: 0.5rem;
-          padding-left: 0 ;
+          padding-left: 0;
           padding-top: 0;
           list-style: none;
+          .sub {
+            display: none;
+            position: absolute;
+            margin-left: -2rem;
+            > li {
+              float: left;
+              margin-top: 0.5rem;
+              padding: 0.5rem;
+              padding-left: 0;
+              padding-top: 0;
+              list-style: none;
+            }
+          }
+        }
+        > li:hover {
+          .sub {
+            display: block; 
+          }
         }
       }
     }
