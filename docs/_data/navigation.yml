@@ -2,10 +2,10 @@ items:
 - title : Artwork
   url: /
   subitems:
-    - title: TestText
-      url: /text
-    - title: testAbout
-      url: /about
+    - title : All
+      url: /
+    - title: Subartworks
+      url: /subartworks
 - title : Text
   url: /text
 - title : About
