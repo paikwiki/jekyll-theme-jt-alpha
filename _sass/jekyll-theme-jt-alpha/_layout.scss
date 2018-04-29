@@ -52,6 +52,12 @@
             display: block; 
           }
         }
+        .active {
+          text-decoration: underline;
+          .sub {
+            display: block;
+          }
+        }
       }
     }
   }
