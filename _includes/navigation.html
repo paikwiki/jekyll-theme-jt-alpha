@@ -3,7 +3,7 @@
     {% if site.data.navigation.items.size > 0 %}
     <ul class="main">
       {% for item in site.data.navigation.items %}
-      <li><a href="{{ item.url | prepend:site.baseurl }}">{{ item.title }}</a>
+      <li {% if page.navItemTitle == item.title %}class="active"{% endif %}><a href="{{ item.url | prepend:site.baseurl }}">{{ item.title }}</a>
         {% if item.subitems.size > 0 %}
         <ul class="sub">
           {% for sitem in item.subitems %}
