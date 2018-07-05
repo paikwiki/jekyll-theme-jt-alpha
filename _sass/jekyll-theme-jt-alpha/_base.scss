@@ -11,7 +11,7 @@ h2, h3, h4 {
   margin-bottom: 1em;
 }
 
-h3:before {
+h3::before {
   content: "-";
 }
 
