@@ -28,11 +28,6 @@
         margin: 1rem 0 0 0;
         padding-left: 0;
         height: 3rem;
-        @media all and (max-width: 640px){
-          .main {
-            height: inherit;
-          }
-        }
         > li {
           padding: 0.5rem;
           padding-left: 0;
@@ -62,6 +57,11 @@
           .sub {
             display: block;
           }
+        }
+      }
+      @media all and (max-width: 640px){
+        .main {
+          height: inherit;
         }
       }
     }
